@@ -1,0 +1,8 @@
+My conclusions during coding
+12.03.2020
+
+Goal was to write additional block to mass_algo_classif_function, to make Feature Selection base on the feat_importance.
+From 8 models, startartize block managed to do only for 3-4 of them.
+Reasons: KNN has no feat_importance, CATBoost, Gaussian and SVM.SVC as well required peculiar approach.
+Conclusion: 
+1. Make separate feature selection after model defined
