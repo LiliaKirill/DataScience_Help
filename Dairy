@@ -6,3 +6,13 @@ From 8 models, startartize block managed to do only for 3-4 of them.
 Reasons: KNN has no feat_importance, CATBoost, Gaussian and SVM.SVC as well required peculiar approach.
 Conclusion: 
 1. Make separate feature selection after model defined
+
+
+23.03.2020
+
+Finished and uploaded first draft of Corona_prediction
+
+Future steps:
+1. MOre models and tune
+2. Check prediction
+3. Prediction for more countries
