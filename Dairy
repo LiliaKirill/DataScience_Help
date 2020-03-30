@@ -26,4 +26,6 @@ Preventive Maint
 2. Why predicted is beter than av.Std is equal.
 Recalculate to RSME and will see
 
+3. Drop colin feat improved score (even best RF)
+
 3. Graph for Predicted/Actual
