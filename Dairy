@@ -17,3 +17,13 @@ Future steps:
 2. Check prediction
 3. Prediction for more countries
 4. Go through another Kernel.Check logic!
+
+
+30.03
+
+Preventive Maint
+1. Score improved by drop y=['ttf'] - 5% min and max
+2. Why predicted is beter than av.Std is equal.
+Recalculate to RSME and will see
+
+3. Graph for Predicted/Actual
