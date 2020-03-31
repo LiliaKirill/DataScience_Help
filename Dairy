@@ -26,6 +26,12 @@ Preventive Maint
 2. Why predicted is beter than av.Std is equal.
 Recalculate to RSME and will see
 
-3. Drop colin feat improved score (even best RF)
+3. Drop colin feat improved score (even best RF) (Done)
 
-3. Graph for Predicted/Actual
+4. Graph for Predicted/Actual (Done)
+
+5. Control Outliars by Z_score (Done)
+
+31.03
+
+Instruction for Outliars Detection and Normality Check
