@@ -34,4 +34,20 @@ Recalculate to RSME and will see
 
 31.03
 
-Instruction for Outliars Detection and Normality Check
+Instruction for Outliars Detection and Normality Check (Done)
+
+01.03
+Binary classification
+1. Predict_proba (2 columns - probability to belong one of classes) and 
+decision function (if no predict_proba, posotive- class 1, neg - class 0)
+
+2. Why Predict_proba but not just prediction - used to define threshold at which we should switch from 0 to 1
+
+
+02.03
+Multiclass classification
+1. Prepare y - transform to binary classificaton - LabelBinaliazer
+2. Function with GridSearch to calc y_pred or y_score
+3. Metrics calculare
+4. Precision-Recall Curve to STUDY!
+
