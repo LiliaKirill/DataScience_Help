@@ -36,7 +36,7 @@ Recalculate to RSME and will see
 
 Instruction for Outliars Detection and Normality Check (Done)
 
-01.03
+01.04
 Binary classification
 1. Predict_proba (2 columns - probability to belong one of classes) and 
 decision function (if no predict_proba, posotive- class 1, neg - class 0)
@@ -44,10 +44,26 @@ decision function (if no predict_proba, posotive- class 1, neg - class 0)
 2. Why Predict_proba but not just prediction - used to define threshold at which we should switch from 0 to 1
 
 
-02.03
+02.04
 Multiclass classification
 1. Prepare y - transform to binary classificaton - LabelBinaliazer
 2. Function with GridSearch to calc y_pred or y_score
 3. Metrics calculare
 4. Precision-Recall Curve to STUDY!
+
+05.04
+
+Lecture 2
+
+1. Create test set from data with time element - without data Shuffle or random pick up.
+Because usually new data is fresh one.
+
+2. %time - if more that 10 sec - too long
+
+3. Bagging - Random Forest - Ensemble of trees. 
+Build 10 crappy trees, average them and get 1 good.
+
+Different input for each tree (different subsent or data with replacement - bootstrap)
+
+
 
