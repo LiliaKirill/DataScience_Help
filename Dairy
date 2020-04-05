@@ -65,5 +65,20 @@ Build 10 crappy trees, average them and get 1 good.
 
 Different input for each tree (different subsent or data with replacement - bootstrap)
 
+4. If score on valid is low but we dont know is it because valid test has another dataline or because train is overfitted,
+we can solve it using __OUT_OF_BAG__ score.
+Idea is we calculate train error on the rows from train set but that wasnt used in this tree fitting.
+ So we dont need valid set and we can check how model generalize on the new data
+ 
+ 5. RF tunning - min_sample_leaf - stop split node if <=min_sample_leaf
+ 6. RF tunning - max_features -
+ 
+ Idea to have less correlated trees.
+ If you have so good columns, each tree starts with splitting this column.
+ With this tune we are looking for splitting not to all columns but to subset of them (50 %, 70%, sqrt, log)
+  
+  
+  
+  - stop split node if <=min_sample_leaf
 
 
