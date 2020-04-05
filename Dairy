@@ -31,6 +31,8 @@ Recalculate to RSME and will see
 5. Control Outliars by Z_score (Done)
 6. If add cycle we predict better 25.7 instead 28.
 How fair is it to keep this column?
+7. z=2,orig+cycle XGBOOST no sel=23.701404, RF_Impr=23.607516
+7. QIR,orig+cycle bad
 
 31.03
 
