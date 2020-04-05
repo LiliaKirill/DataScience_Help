@@ -21,16 +21,16 @@ Future steps:
 
 30.03
 
-Preventive Maint
+Preventive Maint-Model_Improved
+
 1. Score improved by drop y=['ttf'] - 5% min and max
 2. Why predicted is beter than av.Std is equal.
 Recalculate to RSME and will see
-
 3. Drop colin feat improved score (even best RF) (Done)
-
 4. Graph for Predicted/Actual (Done)
-
 5. Control Outliars by Z_score (Done)
+6. If add cycle we predict better 25.7 instead 28.
+How fair is it to keep this column?
 
 31.03
 
