@@ -82,5 +82,44 @@ Idea is we calculate train error on the rows from train set but that wasnt used 
   
   
   - stop split node if <=min_sample_leaf
+  
+  09.04.2020
+  1. Feature Importance - if too high probably colinear and try model with low features
+  2. 2 Reasons why score on valid not so good as train one:
+   - Overfitting, probably you can recheck it by creating addiyional valid set or to use oob (if set is big),
+   if it is as well has a big error - 100% you overfit
+   
+   - if your oob not bad - you are doing someething wrong in your dataset
+   if your dataset is not random, f.e. data for last 2 weeks and it doesnt work good,
+   could be that something happend in last 2 weeks. In this case you can break you valid dataset
+   
+   3. One-Hot Enc
+   
+    - encode categ data
+    - drop first col for linear models because they are hate colinear
+    - dont drop it for RF because we dont care much about colin here
+    
+   even if it is not much improve your model, do one-hot and define feat.import
+   this will help better explain what feat infl on prediction
+   
+  how decide what columns from caterorical to one-hot?
+  If cardinality less than 7 please one  hot -example
+  
+  dummy=One_hot
+  
+  4. Removing REbundat features
+   - Use hierarchy- dendrogram - cluster analysis
+   Clustering
+   1. KNN
+   2. Hierarchical or Aglomerating
+    - draw all points, consider in parallel by 2, replace 2 nearest by average and continue
+    
+    in dendrogramm more close commom line to right (to features) more similar yhey are
+    
+    - To build dendrogr we have to be sure no NAN in corr matrix.
+    For this ddrop all feat with feat importance 0
+    
+    
+    
 
 
