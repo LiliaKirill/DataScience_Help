@@ -119,6 +119,27 @@ Idea is we calculate train error on the rows from train set but that wasnt used 
     - To build dendrogr we have to be sure no NAN in corr matrix.
     For this ddrop all feat with feat importance 0
     
+    10.04.2020
+    
+    Validation is worse that train
+    Check is dates make influence in validation 
+    1. Check oob=True score, if it is good and validation is bad it means that valid set time make influence and model overfitted
+    
+    Avoid overfitting
+    
+    1. Subsampling
+    2. Set up limit amount of samples per tree
+    3. Tree tunning parameters
+     - prevent overfitting by making less deep tree:
+      - min_samples_leaf -stop to split node at this point
+      - max_features - limit columns 
+      
+    4. More modelling you dont need all ds for each tree, 
+    using subset show both faster and provide better interpretation - less overfit
+    
+    5. We made prediction, but how check confidence - use st dev or st dev/predicted price
+    
+    
     
     
 
