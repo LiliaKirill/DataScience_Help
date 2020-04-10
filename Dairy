@@ -139,6 +139,74 @@ Idea is we calculate train error on the rows from train set but that wasnt used 
     
     5. We made prediction, but how check confidence - use st dev or st dev/predicted price
     
+    Partial dependence 
+    From the important features (feat impot) how feature relate to y
+    we take ds and  values in column YearMade replace to 1 of values f.e.1990
+    And push this ds through already prepared model and defines relations
+    
+    Here we can see some trends and clusrers of lines. Some product are growing some still flat
+    Just a way to better undestand data
+    
+    5. Tree Interpreter
+    
+    If someone ask why we predicted this price we can use Treeinterpreter to explain
+
+ 1. We have row to predict
+ 2. we calcaulate predicted price
+ 3. Show bias - average of all prices - value before split
+ 4. contribution - negative and positive contr of features to predicted price
+ 
+ GOOD ML Job - if we know how our model generalize otherwise it is not good ML JOB
+ 
+ Check MOdel Generalization Skill
+Random Sample as Valid Set
+What if not Generilized on Valid. If we go back change few times and it worked probably occidentually Overfit valid set?
+
+Have few valid set - valid+test If they are both ok, so you model good generalize!
+
+Instead Valid can be used OOB
+
+But in average it is less good than valid, because ....
+
+SOmetimes we are not able to use random subset - f.e. in case of forecasring - timeelement here
+
+No sense to check how accurate your model predict data with 4 years old timeline
+
+As well validation set could be wrong - it imbalanced. Desease only 1 row
+
+SO - in PM valid set should be not last one rows but random
+How to buld good Valid set? What if OOB good but we fail in prediction future during valid set? Here maybe better consider not full train set but last 2 weeks
+
+So
+
+Fit model Train
+Check oob
+Check valid
+Check valid+train
+Apply test
+SO - How check is your valid set is represential with TEST
+- 1. fit 5 models with train
+    - could be train on full ds, on last 2 weeks, etc.
+- 2. find 4 scores with valid
+- 3. 5 score with test
+- 4. Build stright line chart - if scores are same - good representation
+
+PM - how define valid set that represent test?
+
+2 potential:
+
+1. Random from each id
+2. Random from all ds
+
+3 models:
+- full ds, first 10 000, last 10 000 (no sort, by id only, added cycle column (later try only corr col))
+
+REsult: More close score Valid and TEst: Random row from all ds (valid-0.77,0.89,0.70 test-0.65,0.62,0.55, OOB- 0.75, 0.86,0.70)
+
+
+- 
+
+
     
     
     
