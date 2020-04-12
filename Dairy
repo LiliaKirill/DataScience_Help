@@ -203,8 +203,35 @@ PM - how define valid set that represent test?
 
 REsult: More close score Valid and TEst: Random row from all ds (valid-0.77,0.89,0.70 test-0.65,0.62,0.55, OOB- 0.75, 0.86,0.70)
 
+12.04.2020
 
-- 
+1.THE MOST important stepin ML - to be sure that your valid set is representative to TEST one!
+2. WHY not always good to use Cross_validation:
+ - long
+ - it shuffle data and our valid set could have no sense in shuffle form
+ 3. What is it TREE-ENterpiter?
+ - explains how each feature contributes (neg and positivly) to final prediction price 
+ - like from average price, for point 1 the feature 'Grarage_1' add 0.1 - USE WATERFALL Chart
+ - Example of Tree-Enterp - Explain me why your model shows that I will like this crappy movie?
+  - see because you like that similar movie and you that age range....
+ -bias+contribution = predicted price
+ 
+ 4. EXTRAPOLATION
+ 
+ If you need to predict price next month, linear regression will draw the line over time.
+ It is difficult for RF, there are few ways how to deal
+  - if there are other dependencies, escape usinf dateline in RF
+   1. What is the difference between valid and test set?
+    - combine again train/valid set or train/test, create column 1/0 is row in valid set
+    - now y = ['is_valid']
+    - throught RF try to predict it
+    - if you can predict that means your (test set that your conbinned with train ) is not random and think how yuo can create valid set
+    - check feat import. If there f.e. Sale_Time - probably test set is just sets later sold, machine_id - is just machine's number that was sold later
+    - grad first 2 import feat and .describe info and you can check mean in train/valid/test or размах
+    - drop first 3 feat, again calc fi
+    - create list with time-dep feat, drop by one and check score
+    - define which to drop
+    - drop group define score
 
 
     
