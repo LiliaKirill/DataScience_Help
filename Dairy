@@ -233,6 +233,23 @@ REsult: More close score Valid and TEst: Random row from all ds (valid-0.77,0.89
     - define which to drop
     - drop group define score
 
+13.04.2020
+
+Examples of ML
+
+1. Marketing
+ - Churn - who is gonna leave
+ 'https://www.oreilly.com/radar/drivetrain-approach-data-products/
+   -1. Most Important define object - Sell more book, etc.
+   -2.Define Levers (рычаги) - to get your object' - gifts, call - what things we can do to get object
+   Model can help to get object and implement Levers
+   - 3. Data - how we can collect
+   - 4. Model 5.Interpretation
+Most ML not about prediction but about interpretation
+
+2. Risk Application
+ - Credit, Fraud
+   
 
     
     
