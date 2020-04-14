@@ -271,6 +271,34 @@ Tree Interpreter then we take one pation and can say how features contribute to 
 2. How done feature importance
  1. We can built tree and predictions
  2. We shuffle one of the columns and push ds throught the tree. If predictions are changed much - high importance
+ 
+ 
+IMPORTANT
+
+1. AS I UNDESTOOD - RF cant extrapolate data to the future time series.
+As a decision here - use Neural Network, As well Gradient Boosting can help or special methodic with time date.
+
+So - if you have task to predict future data - RF not the best option here
+
+2. What size should be valid test?
+Ask youself what accuracy do you want? Case fraud and cat recognition
+
+3.Rule of thumb
+ - if you have less 22 class in set - it is unstable
+ 
+4.Statistics
+ - mean = n*p ( n- amount of coin throw, p - probability of result)
+ - std = n*p(1-p) 
+ - st.error - st dev of each trial (100 trows) = std/sqrt(n) 
+ Can be calculated if you train 100 models
+ 
+ Here we can define is our valid set is big enought.
+ Train you model (same param) 5 times and see validation accuracy each time
+ you have 5 numbers of mean, or st.dev or min/max as you wish
+ And if your number vary and not suit to what accuracy you need you have to do something
+ 
+ Or maybe you need cross valid
+ 
    
 
     
