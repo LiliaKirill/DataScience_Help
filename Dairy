@@ -299,6 +299,13 @@ Ask youself what accuracy do you want? Case fraud and cat recognition
  
  Or maybe you need cross valid
  
+ 5. Ideally in train you should have  equal amount of classes,
+ If you have low number of data for some class- you can replicate it,
+ UNBALANCED classes!
+ Bootstrap - less common calss with higher probability, calss weight param in RF,
+ Stratisfied sample - for unbalanced
+ 
+ 
    
 
     
