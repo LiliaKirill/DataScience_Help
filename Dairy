@@ -249,6 +249,28 @@ Most ML not about prediction but about interpretation
 
 2. Risk Application
  - Credit, Fraud
+ 
+3. Medicine
+ - Hospitality readmission - come back to hospital, can predict why
+ - Dosage
+ - Desease Alert
+ 
+4. Human Resources
+ - Employee Chunk - Who, Why?Will he leave if we increase salary for 10%
+ - CV screening
+ - Talant Management
+ - Training provide
+ 
+14.04.2020
+
+1. Feature importance and Tree Interpreter
+
+Feature importance for all DS (at least X)
+Tree Interpreter then we take one pation and can say how features contribute to his readmission
+
+2. How done feature importance
+ 1. We can built tree and predictions
+ 2. We shuffle one of the columns and push ds throught the tree. If predictions are changed much - high importance
    
 
     
